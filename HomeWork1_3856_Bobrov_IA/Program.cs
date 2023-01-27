@@ -49,7 +49,6 @@ if (number3 > number4)     // Сравнение первого числа со 
     {
         Console.WriteLine(number3);
     }
-   
 }
 else if(number4 > number5) // Если втрое число больше первого, то сравнение второго числа с третьим
 {
@@ -86,6 +85,7 @@ else
 Console.WriteLine("Enter number for Task_4");
 int number7 = Convert.ToInt32(Console.ReadLine());
 int i = 2;
+
 if (number7 < 0) // Проверка, что если введенное чило отрицательное
 {
     Console.WriteLine("Enter number > 0");
@@ -94,7 +94,6 @@ else if (number7 == 0 || number7 == 1) //Проверка, если введен
 {
     Console.WriteLine("Not even numbers > 1");
 }
-
 else 
 { 
     Console.Write("Even numbers from 1 to "); 
