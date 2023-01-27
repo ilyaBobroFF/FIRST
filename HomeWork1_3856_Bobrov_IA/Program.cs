@@ -9,14 +9,14 @@ int number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Enter second number for Task_1");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
-if (number1 > number2)
+if (number1 > number2) // Сравнение введеных чисел
 {
     Console.Write("Max number = ");
     Console.WriteLine(number1);
     Console.Write("Min number = ");
     Console.WriteLine(number2);
 }
-else if(number1 == number2)
+else if(number1 == number2) // Проверка на равенство введеных чисел
 {
 Console.Write("Max number = Min number = ");
     Console.WriteLine(number1);
@@ -43,19 +43,19 @@ int number5 = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Max number = ");
 
-if (number3 > number4)
+if (number3 > number4)     // Сравнение первого числа со вторым
 {
-    if(number3 > number5)
+    if(number3 > number5)  // Если первое больше то сравнение первого числа с третьим
     {
         Console.WriteLine(number3);
     }
    
 }
-else if(number4 > number5)
+else if(number4 > number5) // Если втрое число больше первого, то сравнение второго числа с третьим
 {
     Console.WriteLine(number4);
 }
-else
+else                        // Если первое и второе числа не больше третьего, то самое большое третье
 {
     Console.WriteLine(number5); 
 }
@@ -69,7 +69,7 @@ else
 
 Console.WriteLine("Enter number for Task_3");
 int number6 = Convert.ToInt32(Console.ReadLine());
-if (number6 % 2 == 0)
+if (number6 % 2 == 0) // Проверка остатка при делении на 2, введенного числа 
 {
     Console.WriteLine("Even number");
 }
@@ -86,25 +86,27 @@ else
 Console.WriteLine("Enter number for Task_4");
 int number7 = Convert.ToInt32(Console.ReadLine());
 int i = 2;
-if (number7 < 0) 
+if (number7 < 0) // Проверка, что если введенное чило отрицательное
 {
     Console.WriteLine("Enter number > 0");
 }
-else if (number7 == 0 || number7 == 1)
+else if (number7 == 0 || number7 == 1) //Проверка, если введены 0 и 1
 {
     Console.WriteLine("Not even numbers > 1");
 }
 
 else 
 { 
-    Console.Write("Even numbers from 1 to ");
+    Console.Write("Even numbers from 1 to "); 
     Console.Write(number7);
     Console.WriteLine(":");
     
-    while(i <= number7)
+    while(i <= number7 - 2) // Вывод четных чисел через запятую
     {
         Console.Write(i);
         Console.Write(", ");
         i = i + 2;
     }
+      
+    Console.Write(i);  // Добавлено, что бы убрать последнюю запятую в строке терминала при выводе         
 }
