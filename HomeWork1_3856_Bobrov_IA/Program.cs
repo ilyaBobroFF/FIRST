@@ -60,3 +60,21 @@ else
     Console.Write("Max number = ");
     Console.WriteLine(number5); 
 }
+
+// Задача 6: Напишите программу, которая на вход принимает
+// число и выдает, является ли число четным (делится ли оно на
+// два без остатка).
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
+
+Console.WriteLine("Enter number for Task_3");
+int number6 = Convert.ToInt32(Console.ReadLine());
+if (number6 % 2 == 0)
+{
+    Console.WriteLine("Even number");
+}
+else
+{
+    Console.WriteLine("Odd number");
+}
