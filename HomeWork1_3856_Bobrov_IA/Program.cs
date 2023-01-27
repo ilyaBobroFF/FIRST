@@ -41,23 +41,22 @@ int number4 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Enter third number for Task_2");
 int number5 = Convert.ToInt32(Console.ReadLine());
 
+Console.Write("Max number = ");
+
 if (number3 > number4)
 {
     if(number3 > number5)
     {
-        Console.Write("Max number = ");
         Console.WriteLine(number3);
     }
    
 }
 else if(number4 > number5)
 {
-    Console.Write("Max number = ");
     Console.WriteLine(number4);
 }
 else
 {
-    Console.Write("Max number = ");
     Console.WriteLine(number5); 
 }
 
@@ -77,4 +76,35 @@ if (number6 % 2 == 0)
 else
 {
     Console.WriteLine("Odd number");
+}
+
+// Задача 8: Напишите программу, которая на вход принимает
+// число (N), а на выходе показывает все чётные числа от 1 до N.
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+Console.WriteLine("Enter number for Task_4");
+int number7 = Convert.ToInt32(Console.ReadLine());
+int i = 2;
+if (number7 < 0) 
+{
+    Console.WriteLine("Enter number > 0");
+}
+else if (number7 == 0 || number7 == 1)
+{
+    Console.WriteLine("Not even numbers > 1");
+}
+
+else 
+{ 
+    Console.Write("Even numbers from 1 to ");
+    Console.Write(number7);
+    Console.WriteLine(":");
+    
+    while(i <= number7)
+    {
+        Console.Write(i);
+        Console.Write(", ");
+        i = i + 2;
+    }
 }
